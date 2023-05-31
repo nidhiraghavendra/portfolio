@@ -1,0 +1,460 @@
+:root {
+    --subblue: #030808c9;
+    --text: #6e468d;
+    --hoverpink: rgb(10, 10, 10);
+    --bg: rgba(241, 227, 229, 0.397);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text);
+    animation: 1s ease-in-out 0s 1 slideIn;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(-90%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  
+header {
+    background-color: transparent;
+    padding: 4%;
+    height: 30px;
+    position: sticky;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.upper {
+    display:flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.icons {
+    height: 150px;
+    z-index: 14;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 150px;
+    margin-left: 30px;
+
+}
+
+.icons i {
+    font-size: 25pt;
+    color: #c6b4c9;
+    
+}
+
+.name-container {
+    font-size: 24pt;
+    font-family: serif;
+}
+
+.full-name {
+    font-size: 50pt;
+    color: pink;
+    font-weight: 800;
+}
+
+.tagline {
+    font-size: 20pt;
+    color: var(--subblue);
+}
+
+.educationline {
+    margin-top: 40px;
+    font-size: 12pt;
+}
+
+.main-container {
+    background-color: var(--bg); 
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+}
+
+.nav-elements {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 7px;
+    width: 600px;
+    list-style: none;
+}
+
+.nav-item a:hover {
+    color: var(--hoverpink);
+    cursor: pointer;
+}
+
+.about {
+    padding: 5%;
+}
+
+.note {
+    line-height: 1;
+    height: fit-content;
+    font-size: 20pt;
+    text-overflow: ellipsis;
+}
+
+.intro {
+    margin-top: -80px;
+    margin-left: 400px;
+    position: relative;
+    z-index: 7;
+}
+
+.photo {
+    padding: 5%;
+    width: 400px;
+    height: 450px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.photo img {
+    margin: auto;
+    height: 480px;
+}
+
+.q {
+    font-size: 42pt;
+}
+
+.skills {
+    padding: 1%;
+    width: fit-content;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill {
+    margin: 6px;
+    padding: 2%;
+    text-align: center;
+    border-radius: 60x;
+}
+
+.skill img {
+    width: 70px;
+    height: 70px;
+    border: 0;
+    padding: 5px;
+    /* box-shadow: 0px 0.3px 5px gainsboro; */
+    margin: auto;
+}
+
+.skill span {
+    color: var(--white);
+}
+
+.section-sk {
+    height: fit-content;
+    color: violet !important;
+    position: relative;
+    z-index: 10;
+}
+
+.all-skills {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    float: right;
+    width: 500px;
+    margin-right: 60px;
+    margin-top: -400px;
+    background-color: #f5edf8c9;
+    box-shadow: 1px 0.002px 16px #e4e1e1
+}
+
+
+.all-skills .right-part {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.subs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillset {
+    height: fit-content;
+    margin: 7px;
+}
+
+.work-experience {
+    padding: 10px;
+    background-color: white;
+}
+
+.container, .carousel-inner .item {
+    height: fit-content;
+    margin: auto;
+    width: 400px;
+}
+
+.item img {
+    width: fit-content;
+}
+
+
+.carousel-control {
+    background-image: none !important;
+    opacity: 1 !important;
+}
+
+.imges {
+    display: flex;
+    margin: auto;
+}
+
+.imges img {
+    width: 200px;
+}
+
+.n {
+    text-decoration: none !important;
+    color: var(--text);
+}
+
+.section-ex {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.section-ex .left-part {
+    min-width: 400px;
+    padding: 1%;
+    max-width: 400px;
+}
+
+.section-ex .right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 900px;
+}
+
+.section-ex .right-part div {
+    padding: 1%;
+}
+
+.section-ex .right-part div b{
+    color: rgba(248, 162, 244, 0.993);
+    font-weight: 200;
+}
+
+.date {
+    font-size: 20pt;
+    color: black;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 16pt;
+    color: #fc94c8 !important;
+}
+
+.desc {
+    padding: 1%;
+}
+
+.desc li {
+    margin: 5px;
+}
+
+
+/* Project Block */
+
+.project-item {
+    margin-top: 40px;
+    background-color: #f5edf8c9;
+    padding: 3%;
+}
+
+.block-item {
+    margin-bottom: 10px;
+    padding: 3%;
+    background-color: white;
+}
+
+.block-title {
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.block-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.block-images div img {
+    width: 300px;
+    height: 150px;
+    box-shadow: 1px 0.05px 10px rgb(230, 229, 229);
+}
+
+.hashtags {
+    color: rgb(253, 148, 165) ;
+}
+
+
+/* education block */
+.education {
+    margin-top: 40px;
+}
+.ed-sec {
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.ed-item {
+    display: flex;
+    background-color: #f5edf8c9;
+    padding: 1%;
+    margin: 5px;
+}
+
+.ed-item img {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    
+    .nav-elements {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 1400px) {
+    .header {
+        height: 60px;
+    }
+
+    .main-container {
+        background-color: var(--bg);
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro {
+        color: #000;
+        margin-left: 10px;
+    }
+
+    .photo, .photo img {
+        margin-top: 10px;
+        height: 260px;
+        width: 200px;
+    }
+
+    .full-name {
+        font-size: 25pt;
+    }
+
+    .tagline h1 {
+        font-size: 18pt;
+    }
+
+    .ed-item img {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+        margin: auto;
+    }
+
+    .ed-item div {
+        padding: 1%;
+    }
+
+    .about div {
+        padding: 3%;
+        margin: 10px;
+    }
+
+    .section-sk {
+        width: 100%;
+        position: static;
+    }
+
+    .all-skills {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .all-skills .left-part {
+        width: 100%;
+        border-right-color: transparent;
+    }
+
+    .section-ex {
+        width: 80%;
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        height: fit-content;
+    }
+
+    .section-ex .right-part {
+        padding: 2%;
+    }
+
+
+    .container, .carousel-inner img {
+        height: fit-content;
+        margin: auto;
+        width: 400px;
+    }
+
+    .skill img {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        padding: 5px;
+        /* box-shadow: 0px 0.3px 5px gainsboro; */
+        margin: auto;
+    }
+}
