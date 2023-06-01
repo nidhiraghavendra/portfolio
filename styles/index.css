@@ -214,14 +214,14 @@ header {
     background-color: white;
 }
 
-.container, .carousel-inner .item {
+.carousel-inner {
     height: fit-content;
-    margin: auto;
-    width: 400px;
+    /* width: 300px; */
 }
 
 .item img {
-    width: fit-content;
+    margin: auto;
+    width: 500px;
 }
 
 
@@ -232,12 +232,14 @@ header {
 
 .imges {
     display: flex;
-    margin: auto;
 }
 
 .imges img {
-    width: 200px;
+    margin: auto;
+    width: 400px;
 }
+
+
 
 .n {
     text-decoration: none !important;
@@ -303,6 +305,7 @@ header {
 }
 
 .block-item {
+    animation: 3s ease-in-out 0s 1 slideIn;
     margin-bottom: 10px;
     padding: 3%;
     background-color: white;
@@ -396,6 +399,14 @@ header {
         font-size: 18pt;
     }
 
+    .imges {
+        display: flex;
+    }
+
+    .imges img {
+        width: 300px;
+    }
+
     .ed-item img {
         width: 60px;
         height: 60px;
@@ -440,13 +451,6 @@ header {
 
     .section-ex .right-part {
         padding: 2%;
-    }
-
-
-    .container, .carousel-inner img {
-        height: fit-content;
-        margin: auto;
-        width: 400px;
     }
 
     .skill img {
