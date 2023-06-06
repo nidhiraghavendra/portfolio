@@ -141,6 +141,10 @@ header {
     font-size: 42pt;
 }
 
+.container {
+    width: 1000px;    
+}
+
 .skills {
     padding: 1%;
     width: fit-content;
@@ -361,6 +365,10 @@ header {
     .nav-elements {
         display: none;
     } 
+    
+    .container {
+       width: 500px;
+    }
 }
 
 @media screen and (max-width: 1400px) {
