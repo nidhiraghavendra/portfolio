@@ -69,13 +69,13 @@ header {
 }
 
 .full-name {
-    font-size: 46pt;
+    font-size: 40pt;
     color: pink;
     font-weight: 800;
 }
 
 .tagline {
-    font-size: 20pt;
+    font-size: 16pt;
     color: var(--subblue);
 }
 
