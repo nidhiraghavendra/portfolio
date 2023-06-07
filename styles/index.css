@@ -118,8 +118,8 @@ header {
 }
 
 .intro {
-    margin-top: -80px;
-    margin-left: 400px;
+    margin-top: 60px;
+/*     margin-left: 400px; */
     position: relative;
     z-index: 7;
 }
