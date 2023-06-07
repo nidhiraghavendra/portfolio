@@ -365,10 +365,6 @@ header {
     .nav-elements {
         display: none;
     } 
-    
-    .container {
-       width: 500px !important;
-    }
 }
 
 @media screen and (max-width: 1400px) {
