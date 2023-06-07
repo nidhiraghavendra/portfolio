@@ -141,10 +141,6 @@ header {
     font-size: 42pt;
 }
 
-.container {
-    width: 1000px !important;    
-}
-
 .skills {
     padding: 1%;
     width: fit-content;
@@ -371,7 +367,11 @@ header {
     .header {
         height: 60px;
     }
-
+    
+    .container {
+        width: 500px !important;    
+    }
+    
     .main-container {
         background-color: var(--bg);
         display: flex;
